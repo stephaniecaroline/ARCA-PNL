@@ -3,11 +3,6 @@ function [Q] = matrizcov(A)
   X = zeros(C,1);
   Q = zeros(C);
   
-##  for i=1:C
-##    y = A(:,i);
-##    X(i) = var(y)*(L-1)/L;
-##  endfor
-  
   for i = 1:C
     for j = 1:C
       if j>i
