@@ -15,4 +15,3 @@ function [Q] = matrizcov(A)
       endif
     endfor
   endfor
-endfunction
