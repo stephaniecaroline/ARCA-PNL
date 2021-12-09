@@ -9,7 +9,7 @@ function [Q] = matrizcov(A)
         y = A(:,i);
         z = A(:,j);
         Q(i,j) = cov(y,z)*(L-1)/L;
-        Q(j,i) = Q(i,j);
+        Q(j,i) = Q(i,j); 
       elseif j==i
         Q(i,j) = var(A(:,i))*(L-1)/L;
       endif
